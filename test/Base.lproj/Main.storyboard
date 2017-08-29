@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Bi-Wd-5Zb">
+                                <rect key="frame" x="51" y="95" width="272" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ahk-IE-psC">
+                                        <rect key="frame" x="115" y="54" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Ahk-IE-psC" firstAttribute="centerX" secondItem="1Bi-Wd-5Zb" secondAttribute="centerX" id="j1a-2d-bRu"/>
+                                    <constraint firstItem="Ahk-IE-psC" firstAttribute="centerY" secondItem="1Bi-Wd-5Zb" secondAttribute="centerY" id="uSP-Pt-Zo9"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mYj-PJ-sFE">
+                                <rect key="frame" x="137.5" y="293" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.74509803919999995" green="1" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="67Y-0o-dpz"/>
+                                </constraints>
+                                <state key="normal" title="скрыть">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="hideButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mgQ-9n-sig"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mYj-PJ-sFE" secondAttribute="bottom" constant="344" id="3HV-a0-WgX"/>
+                            <constraint firstItem="1Bi-Wd-5Zb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="51" id="4zL-Hl-L7r"/>
+                            <constraint firstItem="1Bi-Wd-5Zb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="75" id="AX3-nK-ygd"/>
+                            <constraint firstItem="mYj-PJ-sFE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wwm-Eh-OwN"/>
+                            <constraint firstItem="mYj-PJ-sFE" firstAttribute="top" secondItem="1Bi-Wd-5Zb" secondAttribute="bottom" constant="70" id="Z6w-vF-d6G"/>
+                            <constraint firstAttribute="trailing" secondItem="1Bi-Wd-5Zb" secondAttribute="trailing" constant="52" id="r7x-Nu-kz9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="blackRectangleView" destination="1Bi-Wd-5Zb" id="0z1-hy-oH6"/>
+                        <outlet property="button" destination="mYj-PJ-sFE" id="h4A-nW-z5a"/>
+                        <outlet property="numberLabel" destination="Ahk-IE-psC" id="fgE-A3-nP4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>
